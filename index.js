@@ -16,7 +16,7 @@ fs.watchFile('./payload.json', function(event, filename){
             console.log(arrayOfObjects);
             const sendUpdatedData = () => {
                 const serverOptions = {
-                    uri: 'https://webhook.site/daf0b27e-8a41-45c5-a791-cdef0051895b',
+                    uri: '{yourWebhookURL}',
                     body: JSON.stringify(arrayOfObjects),
                     method: 'POST',
                     headers: {
